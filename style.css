@@ -23,12 +23,17 @@
   src: url("fonts/loyal/LoyalRegularv1.woff") format("woff2");
   font-style: normal;
 }
+@font-face {
+  font-family: "Bentinck";
+  src: url("fonts/loyal/Bentinck-Regular.woff") format("woff2");
+  font-style: normal;
+}
 body {
-  font-family: "Loyal", sans-serif;
+  font-family: "Bodoni Moda", serif;
   margin: 0;
   padding: 0;
-  background-color: #EEEEEE;
-  color:#505D60
+  background-color: #fbf9ec;
+  color: black;
 }
 
 header {
@@ -39,8 +44,10 @@ header {
   font-family: "Chillax-Regular", sans-serif;
   font-size: 30px;
   font-weight: 600;
-  font-display: swap;
-  height: 180px;
+  height: 100px;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 1);
 }
 
 .logo {
@@ -54,10 +61,9 @@ header {
   height: auto;
 }
 
-.nav-content{
+.nav-content {
   display: flex;
   align-items: center;
-  
 }
 
 nav ul {
@@ -85,8 +91,8 @@ nav ul li a:hover {
 }
 
 .nav-button {
-  background: #505D60;
-  color: #EEEEEE;
+  background: #505d60;
+  color: #eeeeee;
   padding: 15px 20px;
   border: none;
   cursor: pointer;
@@ -96,12 +102,16 @@ nav ul li a:hover {
 }
 
 .nav-button:hover {
-  background: #EEEEEE;
-  color: #505D60;
-  border: solid 2px;
-  border-color: #505D60;
+  background: #eeeeee;
+  color: #505d60;
+  border-color: #505d60;
 }
 
+/* .divider {
+  border: none;
+  border-top: 1px solid #505d60; 
+  margin: 100px 0; 
+*/
 
 .hero {
   display: grid;
@@ -121,115 +131,114 @@ nav ul li a:hover {
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  margin: 50px;
-  background-color: beige;
+  justify-content: center;
+  margin: 50px 50px 50px 725px;
+  background-color: #dfd9c3;
   padding: 20px;
   height: 450px;
   width: 600px;
-  margin-left: 700px;
-  margin-right: 50px;
   z-index: 2;
 }
 
-.text-content{
-  background-color: black;
-  z-index: 1;
-
-} 
-
-h1{
-  font-size: 48px;
-  font-weight: 300;
+h1 {
+  font-size: 42px;
+  font-weight: 400;
   margin: 0;
 }
 
-p{
-  font-size: 24px;
+p {
+  font-size: 18px;
   line-height: 2.5rem;
-  font-weight: 900;
+  font-weight: 100;
   margin: 50px 80px 0 0;
-  
 }
 
 .cta-button {
-  background: #505D60;
-  color: #EEEEEE;
+  background: #505d60;
+  color: #eeeeee;
   padding: 15px 20px;
   border: none;
   cursor: pointer;
   font-size: 18px;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 30px;
+  width: fit-content;
+  align-self: left;
 }
 
 .cta-button:hover {
-  background: #EEEEEE;
-  color: #505D60;
-  border: solid 2px;
-  border-color: #505D60;
+  background: #eeeeee;
+  color: #505d60;
+  border-color: #505d60;
 }
 
-
-
-
-
-
-
-
-
-
-
-.about,
-.services,
-.testimonials,
-.contact {
-  text-align: center;
-  padding: 80px;
-  background: white;
-  margin: 60px auto;
-  border-radius: 20px;
-  max-width: 1100px;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
-}
-
-.about img,
-.services img,
-.testimonials img,
-.contact img {
+.services {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 50px 0; /* Add some padding for spacing */
   width: 100%;
-  max-width: 650px;
-  border-radius: 15px;
-  margin-bottom: 30px;
+}
+
+.services h2 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 50px; /* Add some margin below the heading */
+  text-align: center;
 }
 
 .service-grid {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px; 
+  width: 80%; 
+  margin: 0 auto; /* Center the grid */
 }
 
 .service-item {
-  background: #fef6e4;
+  background-color: #dfd9c3;
   padding: 40px;
-  border-radius: 20px;
-  width: 350px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Ensure padding is included in the height and width */
 }
 
-.service-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+.service-item h3 {
+  font-size: 36px;
+  font-weight: 200;
 }
 
-footer {
-  background: linear-gradient(to right, #4a69bd, #6a85b6);
-  color: white;
-  text-align: center;
-  padding: 30px;
-  margin-top: 60px;
-  font-size: 1.1rem;
-  font-weight: 700;
+.service-item p {
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: left;
+  margin: 100px 50px 0 50px;
+  position: relative;
+}
+
+.text-content {
+  margin: 0 0 0 50px;
+  background-color: #eeeeee;
+  padding: 20px;
+  height: 710px;
+  width: 780px;
+}
+
+.citat-karen {
+  font-size: 18px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 2rem;
+  margin-top: 20px;
 }
