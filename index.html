@@ -11,13 +11,15 @@
         rel="stylesheet">
     <title>Essens Terapi - Susan Albertsen</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img class="logo-img" src="img/logo.png" alt="lotus-logo">
+            <a href="index.html">
+                <img class="logo-img" src="img/logo.png" alt="lotus-logo">
+                <span class="sr-only">Gå til forsiden</span>
+            </a>
         </div>
         <div class="nav-content">
             <nav>
@@ -35,7 +37,7 @@
 
 
     <section class="hero">
-        <div class="hero-img-content"><img src="img/placeholder-therapy.jpg" alt="placeholder"></div>
+        <div class="hero-img-content"><img src="img/hero-section.jpg" alt="placeholder"></div>
         <div class="hero-content">
             <h1>Chok- og traumeforløsning. Psykoterapi og mentalisering.</h1>
             <p>Min vision er, sammen med klienten/klienterne at skabe en ønsket
@@ -50,7 +52,7 @@
     <!-- <hr class="divider"> -->
 
     <section class="services">
-        <h2>Jeg tilbyder</h2>
+        <h2>Ydelser</h2>
         <div class="service-grid">
             <div class="service-item">
                 <h3>Psykoterapi</h3>
@@ -70,7 +72,7 @@
     <section class="about-container">
         <h2>Om mig</h2>
         <div class="about">
-            <div class="about-img-content"><img src="img/placeholder-img-0.png" alt=""></div>
+            <div><img class="about-img-content" src="img/om-mig.jpg" alt=""></div>
             <div class="text-content">
                 <p>Mit navn er Susan Albertsen, og jeg er uddannet psykoterapeut med specialisering i Essentiel
                     Integrativ Psykoterapi. Med en baggrund i både terapi og næsten 20 års erfaring i skoleverdenen, har
@@ -98,7 +100,7 @@
 
 
 
-    <section class="testimonials">
+    <!--     <section class="testimonials">
         <h2>Hvad siger klienterne?</h2>
         <p>"Jeg har oplevet en enorm forløsning gennem Susans terapi og føler mig endelig fri."</p>
     </section>
@@ -108,11 +110,25 @@
         <p>Telefon: 25392539</p>
         <p>Email: susanalbertsen69@gmail.com</p>
         <a href="kontakt.html" class="cta-button">Book tid</a>
-    </section>
+    </section> -->
 
     <footer>
-        <p>&copy; 2025 Essens Terapi - Susan Albertsen</p>
-    </footer>
+        <div class="footer-mail-content">
+            <h3>Susan Albertsen</h3>
+            <p>susanalbertsen@gmail.com</p>
+            <p>+45 25 39 25 39</p>
+        </div>
+        <div class="footer-img-content">
+            <img src="img/logo.png" alt="">
+            <p class="copy-content">&copy; 2025 Essens Terapi - Susan Albertsen</p>
+        </div>
+        <div class="footer-street-content">
+            <p>Essens Terapi</p>
+            <p>Østerbrogade 1, 1. sal</p>
+            <p>2100 København Ø</p>
+            <button class="footer-button">Book en session</button>
+            <div></div>
+        </footer>
 
     <script type="module" src="script.js"></script>
 </body>
